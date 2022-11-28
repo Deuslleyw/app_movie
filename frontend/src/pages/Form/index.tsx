@@ -1,8 +1,10 @@
+import './styles.css'
+
 function Form() {
 
     const movie = {
         id: 1,
-        image: "https://br.web.img3.acsta.net/img/d6/cd/d6cd7bc42e04238b8874c68eba4144a5.jpg",
+        image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
         title: "The Witcher",
         count: 2,
         score: 4.5
@@ -20,7 +22,7 @@ function Form() {
                         <input type="email" className="form-control" id="email" />
                     </div>
                     <div className="form-group movie-form-group">
-                        <label htmlFor="score">Faça sua avaliação</label>
+                        <label htmlFor="score">informe sua avaliação</label>
                         <select className="form-control" id="score">
                             <option>1</option>
                             <option>2</option>
@@ -30,7 +32,7 @@ function Form() {
                         </select>
                     </div>
                     <div className="movie-form-btn-container">
-                        <button type="submit" className="btn btn-primary movie-btn">Salvar</button>
+                        <button type="submit" className="btn btn-primary movie-btn"> Salvar</button>
                     </div>
                 </form>
                 <button className="btn btn-primary movie-btn mt-3">Cancelar</button>

@@ -6,7 +6,7 @@ function Navbar() {
         <header>
             <nav className="container">
                 <div className="movie-nav-content">
-                    <h1>Movie</h1>
+                    <h1>MOVIE</h1>
                     <a href="https://github.com/Deuslleyw">
                         <div className="movie-icon-container">
                             <GithubIcon/>
