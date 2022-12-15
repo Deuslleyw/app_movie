@@ -1,7 +1,6 @@
 package com.deuslley.movie.DTO;
 
 import com.deuslley.movie.entities.Movie;
-import lombok.*;
 
 public class MovieDTO {
 
