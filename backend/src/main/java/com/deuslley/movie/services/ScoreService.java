@@ -1,5 +1,6 @@
 package com.deuslley.movie.services;
 
+import com.deuslley.movie.DTO.MovieDTO;
 import com.deuslley.movie.DTO.ScoreDTO;
 import com.deuslley.movie.entities.Movie;
 import com.deuslley.movie.entities.Score;
@@ -24,7 +25,7 @@ public class ScoreService {
     private ScoreRepository scoreRepository;
 
     @Transactional
-    public void saveScore(ScoreDTO dto){
+    public MovieDTO saveScore(ScoreDTO dto){
 
         User user = userRepository.findByEmail(dto.getEmail());
         if (user == null){
@@ -51,6 +52,8 @@ public class ScoreService {
         movie.setCount(movie.getScores().size());
 
         movie = movieRepository.save(movie);
+
+        return new MovieDTO(movie);
 
     }
 }

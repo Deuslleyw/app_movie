@@ -1,7 +1,7 @@
 package com.deuslley.movie.entities;
 
-import javax.persistence.*;
 
+import javax.persistence.*;
 
 @Entity
 @Table(name = "tb_user")
