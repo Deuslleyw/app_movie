@@ -1,12 +1,10 @@
 package com.deuslley.movie.entities;
 import javax.persistence.*;
-import java.io.Serial;
 import java.io.Serializable;
 
 
 @Embeddable
 public class ScorePK implements Serializable {
-    @Serial
     private static  final long serialVersionUID = 1L;
 
     @ManyToOne
