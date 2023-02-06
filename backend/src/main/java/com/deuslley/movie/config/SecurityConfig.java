@@ -1,5 +1,5 @@
 //package com.deuslley.movie.config;
-
+//
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
@@ -25,7 +25,7 @@
 //        }
 //        http.cors().and().csrf().disable();
 //        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-//        http.authorizeHttpRequests().anyRequest().permitAll();
+//        http.authorizeRequests().anyRequest().permitAll();
 //    }
 //    @Bean
 //    CorsConfigurationSource corsConfigurationSource(){
@@ -35,9 +35,5 @@
 //        source.registerCorsConfiguration("/**", configuration);
 //        return source;
 //    }
-//
 //}
-//Deusley//<.>
-
-
-//Desabilitado para fins de >>>>>>>>>>>>testes<<<<<<<<<
+//
